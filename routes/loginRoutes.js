@@ -36,7 +36,7 @@ router.post('/', async (req, res, next) => {
               userId: query.rows[0].id
             },
             'SECRETKEY', {
-              expiresIn: '1h'
+              expiresIn: '2h'
             }
           );
           return res.status(200).send({

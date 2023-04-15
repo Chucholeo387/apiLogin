@@ -39,7 +39,7 @@ const products = [
 
 
 router.get('/', userMiddleware.isLoggedIn, (req, res, next) => {
-    console.log(req.userData);
+ 
     res.json(products)
     res.send('This is the secret content. Only logged in users can see that!');
   });
